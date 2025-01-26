@@ -83,7 +83,6 @@ This will run the container in the background (`-d`), map port 5000 from the hos
 
 After the container is started, you can access the API through:
 
-- **Swagger (API Documentation)**: Access `http://localhost:5000/swagger`
 - **API Endpoints**:
   - **GET /api/posts**: `http://localhost:5000/api/posts`
   - **POST /api/posts**: `http://localhost:5000/api/posts`

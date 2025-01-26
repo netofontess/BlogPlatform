@@ -102,3 +102,36 @@ The application uses **SQLite** as the database. By default, it is configured to
     "DefaultConnection": "Data Source=/app/blogplatform.db"
   }
 }
+```
+
+## cURLS
+**Create Post**
+```cURL
+curl --location 'http://localhost:5000/api/v1/posts' \
+--header 'Content-Type: application/json' \
+--data '{
+    "title": "New Blog Post",
+    "content": "This is the content of the new blog post."
+}'
+```
+
+**Create Comment**
+```cURL
+curl --location 'http://localhost:5000/api/v1/posts/2/comments' \
+--header 'Content-Type: application/json' \
+--data '{
+    "content": "This is a comment on the post!!!!"
+}'
+```
+
+**Get All Posts**
+```cURL
+curl --location 'http://localhost:5000/api/v1/posts' \
+--header 'accept: application/json'
+```
+
+**Get Post by Id**
+```cURL
+curl --location 'http://localhost:5000/api/v1/posts/2' \
+--header 'accept: application/json'
+```

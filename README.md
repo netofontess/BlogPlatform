@@ -42,7 +42,7 @@ dotnet restore
 To run the application locally, use the following command:
 
 ```bash
-dotnet run
+dotnet run --project BlogPlatform.Api/BlogPlatform.Api.csproj
 ```
 
 After running the command, the application will be accessible at `http://localhost:5000` or `https://localhost:5001` (if SSL is configured). You can access the API documentation at:
